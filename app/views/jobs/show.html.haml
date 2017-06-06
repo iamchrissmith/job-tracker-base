@@ -7,3 +7,8 @@ Level of Interest: #{@job.level_of_interest}
 City: #{@job.city}
 %br/
 Company: #{link_to @job.company.name, company_path(@job.company)}
+%br/
+Tags:
+%ul
+- @job.tags.each do |tag|
+  %li #{tag.name}

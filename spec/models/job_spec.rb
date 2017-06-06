@@ -33,6 +33,6 @@ describe Job do
       expect(job).to respond_to(:company)
     end
 
-    it { should have_many(:tags).through(:tag_jobs) }
+    it { should have_many(:tags).through(:job_tags) }
   end
 end

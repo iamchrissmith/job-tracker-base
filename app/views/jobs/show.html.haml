@@ -11,4 +11,4 @@ Company: #{link_to @job.company.name, company_path(@job.company)}
 Tags:
 %ul
 - @job.tags.each do |tag|
-  %li #{tag.name}
+  %li #{tag.name} - #{tag.job_count}
